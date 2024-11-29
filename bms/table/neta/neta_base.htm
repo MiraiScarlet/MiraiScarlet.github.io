@@ -13,11 +13,11 @@
 <link rel="stylesheet" type="text/css" href="neta_base_files/iconochive.css">
 <!-- End Wayback Rewrite JS Include -->
  
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"> 
-<title>ƒlƒ^BMS“ïˆÕ“x•\</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>ãƒã‚¿BMSé›£æ˜“åº¦è¡¨</title> 
 <meta http-equiv="Content-Script-Type" content="text/javascript"> 
 <meta http-equiv="Content-Style-Type" content="text/css"> 
-<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
  
 <style type="text/css"> 
 .tr1 {
@@ -53,7 +53,7 @@ background-color:"yellow";
  
 <script language="javascript" type="text/javascript"> 
 <!--
-// ƒf[ƒ^‚Ì“Ç‚Ýž‚Ý
+// ãƒ‡ãƒ¼ã‚¿ã®èª­ã¿è¾¼ã¿
 function getsc() {
 var m = new Date().getMonth();
 if (m%2==1){
@@ -65,10 +65,10 @@ document.body.text="white";
 }
 }
  
-// ƒNƒbƒL[‚Ì“Ç‚Ýž‚Ý
+// ã‚¯ãƒƒã‚­ãƒ¼ã®èª­ã¿è¾¼ã¿
 function loadCookie(name) {
   var bData = "";
-  var cName = name + "~"; // ƒNƒbƒL[–¼
+  var cName = name + "~"; // ã‚¯ãƒƒã‚­ãƒ¼å
   var cCookie = document.cookie+";";
   var str = cCookie.indexOf(cName);
   if(str != -1) {
@@ -79,26 +79,26 @@ str);
   return bData;
 }
  
-// ƒNƒbƒL[‚Ì‘‚«ž‚Ý
+// ã‚¯ãƒƒã‚­ãƒ¼ã®æ›¸ãè¾¼ã¿
 function saveCookie(name,dValue) {
-  var cName = name + "~"; // ƒNƒbƒL[–¼
-  var cDays = 365; // ƒf[ƒ^‚Ì•Û‘¶“ú”
+  var cName = name + "~"; // ã‚¯ãƒƒã‚­ãƒ¼å
+  var cDays = 365; // ãƒ‡ãƒ¼ã‚¿ã®ä¿å­˜æ—¥æ•°
   var setPre = new Date();
   setPre.setTime(setPre.getTime() + (cDays*1000*24*3600));
   var prd = setPre.toGMTString();
   document.cookie = cName + escape(dValue) + ";expires=" + prd;
 }
-// ƒNƒŠƒAƒf[ƒ^‚Ì‚Ìíœ
+// ã‚¯ãƒªã‚¢ãƒ‡ãƒ¼ã‚¿ã®ã®å‰Šé™¤
 function deletedt() {
-  cName = "tmpdt~"; // íœ‚·‚éƒNƒbƒL[–¼
+  cName = "tmpdt~"; // å‰Šé™¤ã™ã‚‹ã‚¯ãƒƒã‚­ãƒ¼å
   dTime = new Date();
   dTime.setYear(dTime.getYear() - 1);
   document.cookie = cName + ";expires=" + dTime.toGMTString();
 }
  
-var CookieValue = new Array(2000); //* ŒÂ‚Ìƒf[ƒ^‚ð•Û‘¶‚Å‚«‚é
+var CookieValue = new Array(2000); //* å€‹ã®ãƒ‡ãƒ¼ã‚¿ã‚’ä¿å­˜ã§ãã‚‹
  
-//CookieValue ‚Ì‰Šú‰» ‚Æ“Ç‚Ýž‚ÝAƒ{ƒ^ƒ“‚Ì onclick ƒCƒxƒ“ƒgÝ’è
+//CookieValue ã®åˆæœŸåŒ– ã¨èª­ã¿è¾¼ã¿ã€ãƒœã‚¿ãƒ³ã® onclick ã‚¤ãƒ™ãƒ³ãƒˆè¨­å®š
 function initCookieValue() {
   
   for (var i=0;i < CookieValue.length;i++) CookieValue[i] = 0;
@@ -134,7 +134,7 @@ function initCookieValue() {
         }
         
         
-@@@@else if (o.className == "tr_ok")
+ã€€ã€€ã€€ã€€else if (o.className == "tr_ok")
         {
         o.className = "tr_hd";
         CookieValue[idx] = 3;
@@ -188,12 +188,12 @@ __wm.bt(725,27,25,2,"web","http://sky.geocities.jp/syogi2223/neta.html","2019022
  
 <br>
 <center>
-<font size="5" color="FFFFFF">’ZŽžŠÔ‚Å‚Å‚«‚éƒlƒ^BMS“ïˆÕ“x•\‚Å‚·‚—</font> 
+<font size="5" color="FFFFFF">çŸ­æ™‚é–“ã§ã§ãã‚‹ãƒã‚¿BMSé›£æ˜“åº¦è¡¨ã§ã™ï½—</font> 
 </center>
 <br>
 <table align="center" cellspacing="3" id="table1"> 
 <tbody><tr bgcolor="#070007" height="20" style="color:white"> 
-<td>‚—‚—</td> 
+<td>ï½—ï½—</td> 
 <td></td> 
 <td>LR</td> 
 <td>music title</td> 
@@ -202,277 +202,277 @@ __wm.bt(725,27,25,2,"web","http://sky.geocities.jp/syogi2223/neta.html","2019022
 <td width="260px">comment</td> 
   <script language="javascript" type="text/javascript"> 
   <!--//
-///////////////////‹È‚Ìƒf[ƒ^///////////////////
+///////////////////æ›²ã®ãƒ‡ãƒ¼ã‚¿///////////////////
  
 var mname = [
-[1,"‚—‚—1",
+[1,"ï½—ï½—1",
 "(^^) [5keys Normal]",
 "10",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[2,"‚—‚—1",
-"‚¨‚µ‚Á‚±‚­‚¢[‚ñB",
+[2,"ï½—ï½—1",
+"ãŠã—ã£ã“ãã„ãƒ¼ã‚“ã€‚",
 "1036",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[3,"‚—‚—1",
-"l‚ð“{‚ç‚¹‚é•û–@u”ª‚Â“–‚½‚èv",
+[3,"ï½—ï½—1",
+"äººã‚’æ€’ã‚‰ã›ã‚‹æ–¹æ³•ã€Œå…«ã¤å½“ãŸã‚Šã€",
 "106094",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[4,"‚—‚—1",
-"ƒ[ƒrƒEƒXŒ™‚¢",
+[4,"ï½—ï½—1",
+"ã‚¼ãƒ“ã‚¦ã‚¹å«Œã„",
 "5476",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[5,"‚—‚—1",
-"‚à‚µ‚à100–œ‚ ‚Á‚½‚È‚ç (5Keys)",
+[5,"ï½—ï½—1",
+"ã‚‚ã—ã‚‚100ä¸‡ã‚ã£ãŸãªã‚‰ (5Keys)",
 "65910",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[6,"‚—‚—1",
+[6,"ï½—ï½—1",
 "You'll say!",
 "100743",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[7,"‚—‚—1",
+[7,"ï½—ï½—1",
 "LOVE SHINE",
 "3533",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[8,"‚—‚—1",
-"1–{–ž‘«ƒƒ“ [Normal]",
+[8,"ï½—ï½—1",
+"1æœ¬æº€è¶³ãƒ¡ãƒ³ [Normal]",
 "114638",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[9,"‚—‚—2",
+[9,"ï½—ï½—2",
 "The Least L9 sec",
 "71385",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[10,"‚—‚—2",
-"l‚ð“{‚ç‚¹‚é•û–@u•s–¾v",
+[10,"ï½—ï½—2",
+"äººã‚’æ€’ã‚‰ã›ã‚‹æ–¹æ³•ã€Œä¸æ˜Žã€",
 "105944",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[11,"‚—‚—2",
-"Îì‚ÌŒã‚ë‚Ìƒe[ƒ}",
+[11,"ï½—ï½—2",
+"çŸ³å·ã®å¾Œã‚ã®ãƒ†ãƒ¼ãƒž",
 "63902",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[12,"‚—‚—2",
-"—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [NORMAL]",
+[12,"ï½—ï½—2",
+"æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [NORMAL]",
 "96344",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[13,"‚—‚—2",
-"1–{–ž‘«ƒo[ 30•b",
+[13,"ï½—ï½—2",
+"1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’",
 "98463",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[14,"‚—‚—2",
-"êK¯",
+[14,"ï½—ï½—2",
+"éµºï½¯",
 "71384",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[38,"‚—‚—2",
+[38,"ï½—ï½—2",
 "Law of the West",
 "33",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[15,"‚—‚—3",
-"”M‚µ‚½“S‹…‚ð…‚É‚Â‚¯‚é‚Æ‚Ç‚¤‚È‚é‚©",
+[15,"ï½—ï½—3",
+"ç†±ã—ãŸé‰„çƒã‚’æ°´ã«ã¤ã‘ã‚‹ã¨ã©ã†ãªã‚‹ã‹",
 "71381",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[16,"‚—‚—3",
-"ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (HYPER)",
+[16,"ï½—ï½—3",
+"ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (HYPER)",
 "96581",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[17,"‚—‚—3",
+[17,"ï½—ï½—3",
 "Sofa $15 -> $1",
 "2706",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[39,"‚—‚—3",
-"‚Ò‚ë‚Ò‚ë",
+[39,"ï½—ï½—3",
+"ã´ã‚ã´ã‚",
 "111961",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[18,"‚—‚—4",
-"‚Ó‚½‚è‚Æ‚Ð‚Æ‚Â",
+[18,"ï½—ï½—4",
+"ãµãŸã‚Šã¨ã²ã¨ã¤",
 "61282",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[19,"‚—‚—4",
-"c˜A‘Å‘Ì‘€‘æˆê -“û—cŽ™Œü‚¯-",
+[19,"ï½—ï½—4",
+"ç¸¦é€£æ‰“ä½“æ“ç¬¬ä¸€ -ä¹³å¹¼å…å‘ã‘-",
 "96360",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[20,"‚—‚—4",
-"1–{–ž‘«ƒƒ“ [Hyper]",
+[20,"ï½—ï½—4",
+"1æœ¬æº€è¶³ãƒ¡ãƒ³ [Hyper]",
 "114639",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[21,"‚—‚—5",
-"‘S—‡‹RŽm’c‚Ìƒe[ƒ}@ [SP orgasm 7]",
+[21,"ï½—ï½—5",
+"å…¨è£¸é¨Žå£«å›£ã®ãƒ†ãƒ¼ãƒžã€€ [SP orgasm 7]",
 "19979",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[22,"‚—‚—5",
-"‚µ‚±‚µ‚±",
+[22,"ï½—ï½—5",
+"ã—ã“ã—ã“",
 "401",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[23,"‚—‚—6",
-"l@g@Ž–@ŒÌ@‚¾@‚¯@‚Ç@‰Á@‘¬",
+[23,"ï½—ï½—6",
+"äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã ã€€ã‘ã€€ã©ã€€åŠ ã€€é€Ÿ",
 "71548",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[24,"‚—‚—6",
-"Îì‚ÌŒã‚ë‚Ìƒe[ƒ} (SP future7)",
+[24,"ï½—ï½—6",
+"çŸ³å·ã®å¾Œã‚ã®ãƒ†ãƒ¼ãƒž (SP future7)",
 "63935",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[25,"‚—‚—6",
-"l@g@Ž–@ŒÌ@‚Å@‚µ@‚±@‚µ@‚±",
+[25,"ï½—ï½—6",
+"äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã§ã€€ã—ã€€ã“ã€€ã—ã€€ã“",
 "89159",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[26,"‚—‚—6",
-"ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (ANOTHER)",
+[26,"ï½—ï½—6",
+"ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (ANOTHER)",
 "96565",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[27,"‚—‚—7",
-"‚ä‚©‚è‚ñ‚ÌƒGƒbƒ`ƒ{ƒCƒX",
+[27,"ï½—ï½—7",
+"ã‚†ã‹ã‚Šã‚“ã®ã‚¨ãƒƒãƒãƒœã‚¤ã‚¹",
 "71947",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[28,"‚—‚—7",
-"c˜A‘Å‘Ì‘€‘æˆê -18‹Ö-",
+[28,"ï½—ï½—7",
+"ç¸¦é€£æ‰“ä½“æ“ç¬¬ä¸€ -18ç¦-",
 "96363",
-"@",
-"@",
+"ã€€",
+"ã€€",
 "",
 ],
-[29,"‚—‚—8",
-"ƒTƒCƒJ‚ÌÊÞ¶ÔÛ³",
+[29,"ï½—ï½—8",
+"ã‚µã‚¤ã‚«ã®ï¾Šï¾žï½¶ï¾”ï¾›ï½³",
 "100925",
 " ",
 " ",
 " ",
 ],
-[30,"‚—‚—8",
-"—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [HYPER]",
+[30,"ï½—ï½—8",
+"æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [HYPER]",
 "96346",
 " ",
 " ",
 " ",
 ],
-[31,"‚—‚—8",
-"ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (³–Ê)",
+[31,"ï½—ï½—8",
+"ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (æ­£é¢)",
 "96622",
 " ",
 " ",
 " ",
 ],
-[32,"‚—‚—8",
-"1–{–ž‘«ƒo[ 30•b [Another2]",
+[32,"ï½—ï½—8",
+"1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’ [Another2]",
 "98526",
 " ",
 " ",
 " ",
 ],
-[33,"‚—‚—9",
-"ƒRƒ“ƒ{ƒC‚Ì“ä",
+[33,"ï½—ï½—9",
+"ã‚³ãƒ³ãƒœã‚¤ã®è¬Ž",
 "9006",
 " ",
 " ",
 " ",
 ],
-[34,"‚—‚—9",
-"—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [ANOTHER]",
+[34,"ï½—ï½—9",
+"æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [ANOTHER]",
 "96407",
 " ",
 " ",
 " ",
 ],
-[35,"‚—‚—9",
-"”­î‚µ‚½‚Ê‚¦‚É‘º¹‚ð‹ß‚Ã‚¯‚é‚Æ‚Ç‚¤‚È‚é‚©",
+[35,"ï½—ï½—9",
+"ç™ºæƒ…ã—ãŸã¬ãˆã«æ‘æ²™ã‚’è¿‘ã¥ã‘ã‚‹ã¨ã©ã†ãªã‚‹ã‹",
 "77019",
 " ",
 " ",
 " ",
 ],
-[36,"‚—‚—9",
-"1–{–ž‘«ƒƒ“ [Another]",
+[36,"ï½—ï½—9",
+"1æœ¬æº€è¶³ãƒ¡ãƒ³ [Another]",
 "114640",
 " ",
 " ",
 " ",
 ],
-[37,"‚—‚—9",
-"1–{–ž‘«ƒo[ 30•b [Another]",
+[37,"ï½—ï½—9",
+"1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’ [Another]",
 "99143",
 " ",
 " ",
@@ -495,45 +495,45 @@ var mname = [
   }
   
   //-->
-  </script></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr1" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=10">IR</a></td><td>(^^) [5keys Normal]</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr2" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1036">IR</a></td><td>‚¨‚µ‚Á‚±‚­‚¢[‚ñB</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr3" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=106094">IR</a></td><td>l‚ð“{‚ç‚¹‚é•û–@u”ª‚Â“–‚½‚èv</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr4" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5476">IR</a></td><td>ƒ[ƒrƒEƒXŒ™‚¢</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr5" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=65910">IR</a></td><td>‚à‚µ‚à100–œ‚ ‚Á‚½‚È‚ç (5Keys)</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr6" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100743">IR</a></td><td>You'll say!</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr7" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=3533">IR</a></td><td>LOVE SHINE</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr8" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114638">IR</a></td><td>1–{–ž‘«ƒƒ“ [Normal]</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr9" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71385">IR</a></td><td>The Least L9 sec</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr10" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105944">IR</a></td><td>l‚ð“{‚ç‚¹‚é•û–@u•s–¾v</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr11" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63902">IR</a></td><td>Îì‚ÌŒã‚ë‚Ìƒe[ƒ}</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr12" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96344">IR</a></td><td>—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [NORMAL]</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr13" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98463">IR</a></td><td>1–{–ž‘«ƒo[ 30•b</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr14" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71384">IR</a></td><td>êK¯</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr38" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=33">IR</a></td><td>Law of the West</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr15" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71381">IR</a></td><td>”M‚µ‚½“S‹…‚ð…‚É‚Â‚¯‚é‚Æ‚Ç‚¤‚È‚é‚©</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr16" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96581">IR</a></td><td>ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (HYPER)</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr17" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2706">IR</a></td><td>Sofa $15 -&gt; $1</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr39" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=111961">IR</a></td><td>‚Ò‚ë‚Ò‚ë</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr18" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=61282">IR</a></td><td>‚Ó‚½‚è‚Æ‚Ð‚Æ‚Â</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr19" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96360">IR</a></td><td>c˜A‘Å‘Ì‘€‘æˆê -“û—cŽ™Œü‚¯-</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr20" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114639">IR</a></td><td>1–{–ž‘«ƒƒ“ [Hyper]</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr21" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=19979">IR</a></td><td>‘S—‡‹RŽm’c‚Ìƒe[ƒ}@ [SP orgasm 7]</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr22" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=401">IR</a></td><td>‚µ‚±‚µ‚±</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr23" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71548">IR</a></td><td>l@g@Ž–@ŒÌ@‚¾@‚¯@‚Ç@‰Á@‘¬</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr24" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63935">IR</a></td><td>Îì‚ÌŒã‚ë‚Ìƒe[ƒ} (SP future7)</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr25" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=89159">IR</a></td><td>l@g@Ž–@ŒÌ@‚Å@‚µ@‚±@‚µ@‚±</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr26" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96565">IR</a></td><td>ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (ANOTHER)</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr27" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71947">IR</a></td><td>‚ä‚©‚è‚ñ‚ÌƒGƒbƒ`ƒ{ƒCƒX</td><td>@</td><td>@</td><td>
-</td></tr><tr class="tr_ng" id="#tr28" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96363">IR</a></td><td>c˜A‘Å‘Ì‘€‘æˆê -18‹Ö-</td><td>@</td><td>@</td><td>
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr29" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100925">IR</a></td><td>ƒTƒCƒJ‚ÌÊÞ¶ÔÛ³</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr30" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96346">IR</a></td><td>—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [HYPER]</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr31" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96622">IR</a></td><td>ƒXƒl•v‚Á‚Ä–{“–ƒKƒo (³–Ê)</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr32" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98526">IR</a></td><td>1–{–ž‘«ƒo[ 30•b [Another2]</td><td> </td><td> </td><td> 
-</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr33" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=9006">IR</a></td><td>ƒRƒ“ƒ{ƒC‚Ì“ä</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr34" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96407">IR</a></td><td>—öˆ¤‚É‚Í‰œŽè‚¾‚ªA‚»‚Ì‚Ô‚ñŽ¨‚ÌŒŠ‚ðL‚°‚Ä‚µ‚Ü‚¤Ž¨ŒŠŒn’jŽq [ANOTHER]</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr35" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=77019">IR</a></td><td>”­î‚µ‚½‚Ê‚¦‚É‘º¹‚ð‹ß‚Ã‚¯‚é‚Æ‚Ç‚¤‚È‚é‚©</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr36" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114640">IR</a></td><td>1–{–ž‘«ƒƒ“ [Another]</td><td> </td><td> </td><td> 
-</td></tr><tr class="tr_ng" id="#tr37" style="color:black;font-size:12px" height="14"><td width="34">‚—‚—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=99143">IR</a></td><td>1–{–ž‘«ƒo[ 30•b [Another]</td><td> </td><td> </td><td> 
+  </script></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr1" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=10">IR</a></td><td>(^^) [5keys Normal]</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr2" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1036">IR</a></td><td>ãŠã—ã£ã“ãã„ãƒ¼ã‚“ã€‚</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr3" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=106094">IR</a></td><td>äººã‚’æ€’ã‚‰ã›ã‚‹æ–¹æ³•ã€Œå…«ã¤å½“ãŸã‚Šã€</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr4" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5476">IR</a></td><td>ã‚¼ãƒ“ã‚¦ã‚¹å«Œã„</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr5" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=65910">IR</a></td><td>ã‚‚ã—ã‚‚100ä¸‡ã‚ã£ãŸãªã‚‰ (5Keys)</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr6" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100743">IR</a></td><td>You'll say!</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr7" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=3533">IR</a></td><td>LOVE SHINE</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr8" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114638">IR</a></td><td>1æœ¬æº€è¶³ãƒ¡ãƒ³ [Normal]</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr9" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71385">IR</a></td><td>The Least L9 sec</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr10" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105944">IR</a></td><td>äººã‚’æ€’ã‚‰ã›ã‚‹æ–¹æ³•ã€Œä¸æ˜Žã€</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr11" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63902">IR</a></td><td>çŸ³å·ã®å¾Œã‚ã®ãƒ†ãƒ¼ãƒž</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr12" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96344">IR</a></td><td>æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [NORMAL]</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr13" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98463">IR</a></td><td>1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr14" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71384">IR</a></td><td>éµºï½¯</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr38" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=33">IR</a></td><td>Law of the West</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr15" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71381">IR</a></td><td>ç†±ã—ãŸé‰„çƒã‚’æ°´ã«ã¤ã‘ã‚‹ã¨ã©ã†ãªã‚‹ã‹</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr16" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96581">IR</a></td><td>ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (HYPER)</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr17" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2706">IR</a></td><td>Sofa $15 -&gt; $1</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr39" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=111961">IR</a></td><td>ã´ã‚ã´ã‚</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr18" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=61282">IR</a></td><td>ãµãŸã‚Šã¨ã²ã¨ã¤</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr19" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96360">IR</a></td><td>ç¸¦é€£æ‰“ä½“æ“ç¬¬ä¸€ -ä¹³å¹¼å…å‘ã‘-</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr20" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114639">IR</a></td><td>1æœ¬æº€è¶³ãƒ¡ãƒ³ [Hyper]</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr21" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=19979">IR</a></td><td>å…¨è£¸é¨Žå£«å›£ã®ãƒ†ãƒ¼ãƒžã€€ [SP orgasm 7]</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr22" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=401">IR</a></td><td>ã—ã“ã—ã“</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr23" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71548">IR</a></td><td>äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã ã€€ã‘ã€€ã©ã€€åŠ ã€€é€Ÿ</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr24" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63935">IR</a></td><td>çŸ³å·ã®å¾Œã‚ã®ãƒ†ãƒ¼ãƒž (SP future7)</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr25" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=89159">IR</a></td><td>äººã€€èº«ã€€äº‹ã€€æ•…ã€€ã§ã€€ã—ã€€ã“ã€€ã—ã€€ã“</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr26" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96565">IR</a></td><td>ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (ANOTHER)</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr27" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71947">IR</a></td><td>ã‚†ã‹ã‚Šã‚“ã®ã‚¨ãƒƒãƒãƒœã‚¤ã‚¹</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr class="tr_ng" id="#tr28" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96363">IR</a></td><td>ç¸¦é€£æ‰“ä½“æ“ç¬¬ä¸€ -18ç¦-</td><td>ã€€</td><td>ã€€</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr29" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100925">IR</a></td><td>ã‚µã‚¤ã‚«ã®ï¾Šï¾žï½¶ï¾”ï¾›ï½³</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr30" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96346">IR</a></td><td>æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [HYPER]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr31" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96622">IR</a></td><td>ã‚¹ãƒå¤«ã£ã¦æœ¬å½“ã‚¬ãƒ (æ­£é¢)</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr32" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98526">IR</a></td><td>1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’ [Another2]</td><td> </td><td> </td><td> 
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr33" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=9006">IR</a></td><td>ã‚³ãƒ³ãƒœã‚¤ã®è¬Ž</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr34" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96407">IR</a></td><td>æ‹æ„›ã«ã¯å¥¥æ‰‹ã ãŒã€ãã®ã¶ã‚“è€³ã®ç©´ã‚’åºƒã’ã¦ã—ã¾ã†è€³ç©´ç³»ç”·å­ [ANOTHER]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr35" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=77019">IR</a></td><td>ç™ºæƒ…ã—ãŸã¬ãˆã«æ‘æ²™ã‚’è¿‘ã¥ã‘ã‚‹ã¨ã©ã†ãªã‚‹ã‹</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr36" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114640">IR</a></td><td>1æœ¬æº€è¶³ãƒ¡ãƒ³ [Another]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr37" style="color:black;font-size:12px" height="14"><td width="34">ï½—ï½—9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=99143">IR</a></td><td>1æœ¬æº€è¶³ãƒãƒ¼ 30ç§’ [Another]</td><td> </td><td> </td><td> 
  
   </td></tr></tbody></table> 
 
