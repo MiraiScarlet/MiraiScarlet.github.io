@@ -14,10 +14,6 @@
 
  **https://miraiscarlet.github.io/bms/table/genocide_insane/insane_bms.html**
 
- __ネタBMS難易度表__
-
- **
- **https://miraiscarlet.github.io/bms/table/neta/neta_bms.html**
 
  ex.beatorajaの場合
 
