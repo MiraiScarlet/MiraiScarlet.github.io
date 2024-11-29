@@ -1,0 +1,563 @@
+<html lang="ja"><head><script src="neta_base_files/athena.js" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app215.us.archive.org';v.server_ms=345;archive_analytics.send_pageview({});});</script>
+<script type="text/javascript" src="neta_base_files/bundle-playback.js" charset="utf-8"></script>
+<script type="text/javascript" src="neta_base_files/wombat.js" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="neta_base_files/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://sky.geocities.jp:80/syogi2223/neta.html","20190226023731","http://web.archive.org/","web","/_static/",
+	      "1551148651");
+</script>
+<link rel="stylesheet" type="text/css" href="neta_base_files/banner-styles.css">
+<link rel="stylesheet" type="text/css" href="neta_base_files/iconochive.css">
+<!-- End Wayback Rewrite JS Include -->
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"> 
+<title>ネタBMS難易度表</title> 
+<meta http-equiv="Content-Script-Type" content="text/javascript"> 
+<meta http-equiv="Content-Style-Type" content="text/css"> 
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS"> 
+ 
+<style type="text/css"> 
+.tr1 {
+  color:black;
+}
+.tr_ok {
+  background-color:#FFFF90;
+}
+.tr_ng {
+  background-color:lightgrey;
+}
+.tr_hd{
+  background-color:red;
+}
+.tr_ez{
+  background-color:#66FF99;
+}
+a:link{
+color:"richblue";
+}
+a:visited{
+color:"limegreen";
+}
+a:hover{
+color:"red";
+background-color:"yellow";
+}
+a:active{
+color:"red";
+background-color:"yellow";
+}
+</style> 
+ 
+<script language="javascript" type="text/javascript"> 
+<!--
+// データの読み込み
+function getsc() {
+var m = new Date().getMonth();
+if (m%2==1){
+document.body.style.filter="progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#ccccccff', EndColorStr='#ffffffff')";
+document.body.text="black";
+}else{
+document.body.style.filter="progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#cc000033', EndColorStr='#ff000000')";
+document.body.text="white";
+}
+}
+ 
+// クッキーの読み込み
+function loadCookie(name) {
+  var bData = "";
+  var cName = name + "~"; // クッキー名
+  var cCookie = document.cookie+";";
+  var str = cCookie.indexOf(cName);
+  if(str != -1) {
+     end = cCookie.indexOf(";",
+str);
+     bData = unescape(cCookie.substring(str + cName.length, end));
+  }
+  return bData;
+}
+ 
+// クッキーの書き込み
+function saveCookie(name,dValue) {
+  var cName = name + "~"; // クッキー名
+  var cDays = 365; // データの保存日数
+  var setPre = new Date();
+  setPre.setTime(setPre.getTime() + (cDays*1000*24*3600));
+  var prd = setPre.toGMTString();
+  document.cookie = cName + escape(dValue) + ";expires=" + prd;
+}
+// クリアデータのの削除
+function deletedt() {
+  cName = "tmpdt~"; // 削除するクッキー名
+  dTime = new Date();
+  dTime.setYear(dTime.getYear() - 1);
+  document.cookie = cName + ";expires=" + dTime.toGMTString();
+}
+ 
+var CookieValue = new Array(2000); //* 個のデータを保存できる
+ 
+//CookieValue の初期化 と読み込み、ボタンの onclick イベント設定
+function initCookieValue() {
+  
+  for (var i=0;i < CookieValue.length;i++) CookieValue[i] = 0;
+  
+  var imps = document.getElementById("table1").getElementsByTagName("input");
+  var nVal = "" + loadCookie("tmpdt");
+ 
+//  alert("Cookies="+nVal);
+ 
+  for (var i=0;i < nVal.length;i++)
+     CookieValue[i] = nVal.charAt(i)-0;
+ 
+  for (var i=0;i < imps.length;i++) {
+     imps[i].onclick=function(e) {
+        var o;
+        if (window.event) e = window.event;
+        o = e.srcElement ? e.srcElement : e.target;
+ 
+        while (o.nodeName.toLowerCase() != "tr") o = o.parentNode;
+ 
+        var idx = parseInt(o.id.replace("#tr",
+""),10);
+        if (o.className == "tr_ng") 
+        {
+           o.className = "tr_ez";
+           CookieValue[idx] = 1;
+        }
+        else if (o.className == "tr_ez")
+        {
+        o.className = "tr_ok";
+        CookieValue[idx] = 2;
+        
+        }
+        
+        
+　　　　else if (o.className == "tr_ok")
+        {
+        o.className = "tr_hd";
+        CookieValue[idx] = 3;
+        
+        }
+        
+        else {
+           o.className = "tr_ng";
+           CookieValue[idx] = 0;
+        }
+        backupCookie();
+     }
+var tr;
+switch(CookieValue[mname[i][0]]){
+case 0:
+tr="tr_ng";
+break;
+case 1:
+tr="tr_ez";
+break;
+case 2:
+tr="tr_ok";
+break;
+case 3:
+tr="tr_hd";
+break;
+}
+document.getElementById("#tr"+mname[i][0]).className = tr;
+ 
+}
+function backupCookie() {
+  saveCookie("tmpdt",
+CookieValue.join(""));
+}
+}
+-->
+</script> 
+</head><body bgcolor="#070000" text="black" onload="initCookieValue()&amp;getsc()"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr; height: 285px;">
+</div><div id="wm-ipp-print">The Wayback Machine - http://web.archive.org/web/20190226023731/http://sky.geocities.jp:80/syogi2223/neta.html</div>
+<script type="text/javascript">//<![CDATA[
+__wm.bt(725,27,25,2,"web","http://sky.geocities.jp/syogi2223/neta.html","20190226023731",1996,"/_static/",["/_static/css/banner-styles.css?v=S1zqJCYt","/_static/css/iconochive.css?v=3PDvdIFv"], false);
+  __wm.rw(1);
+//]]></script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+ <!-- geoguide start --><div align="center"><script language="javascript">var jps=382116062;var jpt=1551148651</script><script language="javascript" src="neta_base_files/gg.js"></script></div><!-- geoguide end --> 
+
+
+
+ 
+<br>
+<center>
+<font size="5" color="FFFFFF">短時間でできるネタBMS難易度表ですｗ</font> 
+</center>
+<br>
+<table align="center" cellspacing="3" id="table1"> 
+<tbody><tr bgcolor="#070007" height="20" style="color:white"> 
+<td>ｗｗ</td> 
+<td></td> 
+<td>LR</td> 
+<td>music title</td> 
+<td>original artist</td> 
+<td>score site</td> 
+<td width="260px">comment</td> 
+  <script language="javascript" type="text/javascript"> 
+  <!--//
+///////////////////曲のデータ///////////////////
+ 
+var mname = [
+[1,"ｗｗ1",
+"(^^) [5keys Normal]",
+"10",
+"　",
+"　",
+"",
+],
+[2,"ｗｗ1",
+"おしっこくいーん。",
+"1036",
+"　",
+"　",
+"",
+],
+[3,"ｗｗ1",
+"人を怒らせる方法「八つ当たり」",
+"106094",
+"　",
+"　",
+"",
+],
+[4,"ｗｗ1",
+"ゼビウス嫌い",
+"5476",
+"　",
+"　",
+"",
+],
+[5,"ｗｗ1",
+"もしも100万あったなら (5Keys)",
+"65910",
+"　",
+"　",
+"",
+],
+[6,"ｗｗ1",
+"You'll say!",
+"100743",
+"　",
+"　",
+"",
+],
+[7,"ｗｗ1",
+"LOVE SHINE",
+"3533",
+"　",
+"　",
+"",
+],
+[8,"ｗｗ1",
+"1本満足メン [Normal]",
+"114638",
+"　",
+"　",
+"",
+],
+[9,"ｗｗ2",
+"The Least L9 sec",
+"71385",
+"　",
+"　",
+"",
+],
+[10,"ｗｗ2",
+"人を怒らせる方法「不明」",
+"105944",
+"　",
+"　",
+"",
+],
+[11,"ｗｗ2",
+"石川の後ろのテーマ",
+"63902",
+"　",
+"　",
+"",
+],
+[12,"ｗｗ2",
+"恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [NORMAL]",
+"96344",
+"　",
+"　",
+"",
+],
+[13,"ｗｗ2",
+"1本満足バー 30秒",
+"98463",
+"　",
+"　",
+"",
+],
+[14,"ｗｗ2",
+"鵺ｯ",
+"71384",
+"　",
+"　",
+"",
+],
+[38,"ｗｗ2",
+"Law of the West",
+"33",
+"　",
+"　",
+"",
+],
+[15,"ｗｗ3",
+"熱した鉄球を水につけるとどうなるか",
+"71381",
+"　",
+"　",
+"",
+],
+[16,"ｗｗ3",
+"スネ夫って本当ガバ (HYPER)",
+"96581",
+"　",
+"　",
+"",
+],
+[17,"ｗｗ3",
+"Sofa $15 -> $1",
+"2706",
+"　",
+"　",
+"",
+],
+[39,"ｗｗ3",
+"ぴろぴろ",
+"111961",
+"　",
+"　",
+"",
+],
+[18,"ｗｗ4",
+"ふたりとひとつ",
+"61282",
+"　",
+"　",
+"",
+],
+[19,"ｗｗ4",
+"縦連打体操第一 -乳幼児向け-",
+"96360",
+"　",
+"　",
+"",
+],
+[20,"ｗｗ4",
+"1本満足メン [Hyper]",
+"114639",
+"　",
+"　",
+"",
+],
+[21,"ｗｗ5",
+"全裸騎士団のテーマ　 [SP orgasm 7]",
+"19979",
+"　",
+"　",
+"",
+],
+[22,"ｗｗ5",
+"しこしこ",
+"401",
+"　",
+"　",
+"",
+],
+[23,"ｗｗ6",
+"人　身　事　故　だ　け　ど　加　速",
+"71548",
+"　",
+"　",
+"",
+],
+[24,"ｗｗ6",
+"石川の後ろのテーマ (SP future7)",
+"63935",
+"　",
+"　",
+"",
+],
+[25,"ｗｗ6",
+"人　身　事　故　で　し　こ　し　こ",
+"89159",
+"　",
+"　",
+"",
+],
+[26,"ｗｗ6",
+"スネ夫って本当ガバ (ANOTHER)",
+"96565",
+"　",
+"　",
+"",
+],
+[27,"ｗｗ7",
+"ゆかりんのエッチボイス",
+"71947",
+"　",
+"　",
+"",
+],
+[28,"ｗｗ7",
+"縦連打体操第一 -18禁-",
+"96363",
+"　",
+"　",
+"",
+],
+[29,"ｗｗ8",
+"サイカのﾊﾞｶﾔﾛｳ",
+"100925",
+" ",
+" ",
+" ",
+],
+[30,"ｗｗ8",
+"恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [HYPER]",
+"96346",
+" ",
+" ",
+" ",
+],
+[31,"ｗｗ8",
+"スネ夫って本当ガバ (正面)",
+"96622",
+" ",
+" ",
+" ",
+],
+[32,"ｗｗ8",
+"1本満足バー 30秒 [Another2]",
+"98526",
+" ",
+" ",
+" ",
+],
+[33,"ｗｗ9",
+"コンボイの謎",
+"9006",
+" ",
+" ",
+" ",
+],
+[34,"ｗｗ9",
+"恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [ANOTHER]",
+"96407",
+" ",
+" ",
+" ",
+],
+[35,"ｗｗ9",
+"発情したぬえに村沙を近づけるとどうなるか",
+"77019",
+" ",
+" ",
+" ",
+],
+[36,"ｗｗ9",
+"1本満足メン [Another]",
+"114640",
+" ",
+" ",
+" ",
+],
+[37,"ｗｗ9",
+"1本満足バー 30秒 [Another]",
+"99143",
+" ",
+" ",
+" ",
+],
+];
+  for (var i=0;i < mname.length;i++) {
+  if(mname[i][0]==1||mname[i][0]==9||mname[i][0]==15||mname[i][0]==18||mname[i][0]==21||mname[i][0]==23||mname[i][0]==27||mname[i][0]==29||mname[i][0]==33)
+  document.write("<tr height='10' style='background-color:#555555'><td colspan='9'>");
+     document.write("<tr class='tr_ng' id='#tr"+mname[i][0]+"' style='color:black;font-size:12px' height='14'>"+
+     "<td width='34'>"+mname[i][1]+
+     "<td><input type=button value='   '>"+
+ 
+     "<td width='16'><a href='http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid="+mname[i][3]+"'>IR</a>"+
+     "<td>"+mname[i][2]+
+     "<td>"+mname[i][5]+
+     "<td>"+mname[i][4]+
+     "<td>"+mname[i][6]+
+     "\n");
+  }
+  
+  //-->
+  </script></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr1" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=10">IR</a></td><td>(^^) [5keys Normal]</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr2" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1036">IR</a></td><td>おしっこくいーん。</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr3" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=106094">IR</a></td><td>人を怒らせる方法「八つ当たり」</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr4" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5476">IR</a></td><td>ゼビウス嫌い</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr5" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=65910">IR</a></td><td>もしも100万あったなら (5Keys)</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr6" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100743">IR</a></td><td>You'll say!</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr7" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=3533">IR</a></td><td>LOVE SHINE</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr8" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ1</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114638">IR</a></td><td>1本満足メン [Normal]</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr9" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71385">IR</a></td><td>The Least L9 sec</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr10" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105944">IR</a></td><td>人を怒らせる方法「不明」</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr11" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63902">IR</a></td><td>石川の後ろのテーマ</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr12" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96344">IR</a></td><td>恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [NORMAL]</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr13" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98463">IR</a></td><td>1本満足バー 30秒</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr14" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71384">IR</a></td><td>鵺ｯ</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr38" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ2</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=33">IR</a></td><td>Law of the West</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr15" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71381">IR</a></td><td>熱した鉄球を水につけるとどうなるか</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr16" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96581">IR</a></td><td>スネ夫って本当ガバ (HYPER)</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr17" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2706">IR</a></td><td>Sofa $15 -&gt; $1</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr39" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ3</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=111961">IR</a></td><td>ぴろぴろ</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr18" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=61282">IR</a></td><td>ふたりとひとつ</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr19" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96360">IR</a></td><td>縦連打体操第一 -乳幼児向け-</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr20" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ4</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114639">IR</a></td><td>1本満足メン [Hyper]</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr21" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=19979">IR</a></td><td>全裸騎士団のテーマ　 [SP orgasm 7]</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr22" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ5</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=401">IR</a></td><td>しこしこ</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr23" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71548">IR</a></td><td>人　身　事　故　だ　け　ど　加　速</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr24" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=63935">IR</a></td><td>石川の後ろのテーマ (SP future7)</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr25" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=89159">IR</a></td><td>人　身　事　故　で　し　こ　し　こ</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr26" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ6</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96565">IR</a></td><td>スネ夫って本当ガバ (ANOTHER)</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr27" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=71947">IR</a></td><td>ゆかりんのエッチボイス</td><td>　</td><td>　</td><td>
+</td></tr><tr class="tr_ng" id="#tr28" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ7</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96363">IR</a></td><td>縦連打体操第一 -18禁-</td><td>　</td><td>　</td><td>
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr29" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=100925">IR</a></td><td>サイカのﾊﾞｶﾔﾛｳ</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr30" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96346">IR</a></td><td>恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [HYPER]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr31" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96622">IR</a></td><td>スネ夫って本当ガバ (正面)</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr32" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ8</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=98526">IR</a></td><td>1本満足バー 30秒 [Another2]</td><td> </td><td> </td><td> 
+</td></tr><tr height="10" style="background-color:#555555"><td colspan="9"></td></tr><tr class="tr_ng" id="#tr33" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=9006">IR</a></td><td>コンボイの謎</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr34" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96407">IR</a></td><td>恋愛には奥手だが、そのぶん耳の穴を広げてしまう耳穴系男子 [ANOTHER]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr35" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=77019">IR</a></td><td>発情したぬえに村沙を近づけるとどうなるか</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr36" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=114640">IR</a></td><td>1本満足メン [Another]</td><td> </td><td> </td><td> 
+</td></tr><tr class="tr_ng" id="#tr37" style="color:black;font-size:12px" height="14"><td width="34">ｗｗ9</td><td><input type="button" value="   "></td><td width="16"><a href="http://web.archive.org/web/20190226023731/http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=99143">IR</a></td><td>1本満足バー 30秒 [Another]</td><td> </td><td> </td><td> 
+ 
+  </td></tr></tbody></table> 
+
+<div align="center"><strong></strong></div> 
+ 
+<br>
+<script language="javascript" src="neta_base_files/geov2.js"></script><script language="javascript">geovisit();</script><!--
+     FILE ARCHIVED ON 02:37:31 Feb 26, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 16:37:49 Nov 29, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.206
+  exclusion.robots: 0.054
+  exclusion.robots.policy: 0.032
+  esindex: 0.021
+  cdx.remote: 25.524
+  LoadShardBlock: 88.259 (3)
+  PetaboxLoader3.datanode: 140.744 (4)
+  load_resource: 191.115
+  PetaboxLoader3.resolve: 110.826
+--></body></html>
+<!-- text below generated by geocities.jp -->
