@@ -1,7 +1,7 @@
 ﻿{"course":[
 [
 	{
-		"name":"LR2第一期BMS段位認定 初段",
+		"name":"LR2IR第一期BMS段位認定 初段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -17,7 +17,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 二段",
+		"name":"LR2IR第一期BMS段位認定 二段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -33,7 +33,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 三段",
+		"name":"LR2IR第一期BMS段位認定 三段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -49,7 +49,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 四段",
+		"name":"LR2IR第一期BMS段位認定 四段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -65,7 +65,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 五段",
+		"name":"LR2IR第一期BMS段位認定 五段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -81,7 +81,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 六段",
+		"name":"LR2IR第一期BMS段位認定 六段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -97,7 +97,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 七段",
+		"name":"LR2IR第一期BMS段位認定 七段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -113,7 +113,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 八段",
+		"name":"LR2IR第一期BMS段位認定 八段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -129,7 +129,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 九段",
+		"name":"LR2IR第一期BMS段位認定 九段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -145,7 +145,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 十段",
+		"name":"LR2IR第一期BMS段位認定 十段",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},
@@ -161,7 +161,7 @@
 		]
 	},
 	{
-		"name":"LR2第一期BMS段位認定 皆伝",
+		"name":"LR2IR第一期BMS段位認定 皆伝",
 		"constraint":["grade_mirror" , "gauge_lr2" , "ln"],
 		"trophy":[
 			{"name":"bronzemedal", "missrate":7.5, "scorerate":0.0},

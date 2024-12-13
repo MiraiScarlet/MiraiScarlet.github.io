@@ -10,6 +10,12 @@
 
  以下のURLを使用するツールに追加してください。
 
+ __通常難易度表(GENOCIDE)__
+
+ **https://miraiscarlet.github.io/bms/table/genocide_normal/normal_bms.html**
+
+上記難易度表はおまけとして、コース定義部分に現在の通常段位(2018)に加えて、**過去の通常段位コース(LR2第一期(2009)・2012)を登録してあります**
+ 
  __発狂BMS難易度表(GENOCIDE)__
 
  **https://miraiscarlet.github.io/bms/table/genocide_insane/insane_bms.html**
