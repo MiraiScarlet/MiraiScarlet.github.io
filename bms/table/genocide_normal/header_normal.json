@@ -16,6 +16,6 @@
 	"data_url":"./data_normal.json",
 	"last_update": "2017.02.01",
 	"symbol":"☆",
-	"level_order":[1,2,3,4,5,6,7,8,9,10,11,12,13,"X"],
+	"level_order":["1","2","3","4","5","6","7","8","9","10","11","12","13","X"],
 	"original_url": "http://nekokan.dyndns.info/~lobsak/genocide/normal.html"
 }
